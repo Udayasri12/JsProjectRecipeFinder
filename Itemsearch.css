@@ -1,0 +1,72 @@
+
+    body{
+        background-image: url(https://t3.ftcdn.net/jpg/03/15/27/40/240_F_315274007_CGc1QiuMx3zYGHoRjvn3vxnZH7NznTQp.jpg);
+        background-size: cover;
+    }
+
+      #md1 {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        overflow: scroll;                
+      }
+      #d1 {
+        display: grid;
+        row-gap: 2%;
+        height: 720px;       
+      }
+      #d13 {
+        border: 1px solid black;
+        box-shadow: 2px 2px rgb(70, 71, 72);
+        width: 70%;
+        height: 450px;
+        border-radius: 10%;
+        background-color: white;
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        /* row-gap: 2%; */
+        
+      }
+      #d12 {
+      
+        display: flex;
+      }
+      #img1 {
+        height: 300px;
+        width: 300px;
+        position: relative;
+        top: 10px;
+        border-radius: 50%;
+      }
+      input,
+      #btn1 ,#infobutton{
+        font-size: 180%;
+        border-radius: 10px;
+        padding: 1%;
+      }
+      #btn1 {
+        margin-left: 35%;
+        margin-top: 2%;
+      }
+      #anchor  button{
+         font-size: 150%;
+         padding: 10px;
+         border-radius: 5%;
+      }
+      button:hover{
+        color: white;
+        background-color: darkred;
+      }
+      #heading1{
+        text-align: center;
+        color:aqua;
+        font-size: 300%;
+        font-style: italic;
+        font-weight: bolder;
+      }
+      h3{
+        word-wrap: break-word;
+        width: 80%;
+      }
+    

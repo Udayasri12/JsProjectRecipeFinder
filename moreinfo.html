@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #d11 {
+        background-image: url(https://t4.ftcdn.net/jpg/07/12/97/75/240_F_712977594_V158KfJ8t8vaJlFb40TiOAfN7oz0issi.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: start;
+        width: 100%;
+        height: 720px;
+      }
+      #imgg1 {
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        margin-top: 10%;
+        margin-left: 100px;
+        /* align-items: center; */
+      }
+      #p11 {
+        /* border: 1px solid black; */
+        width: 60%;
+        text-align: justify;
+        font-size: large;
+        display: grid;
+        /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+      }
+      #pt {
+        word-wrap: break-word;
+        width: 810px;
+        /* text-align: justify; */
+        margin-left: 15%;
+        /* margin-top: 10px; */
+        color: white;
+      }
+      #h11 {
+        /* margin-top: -180px; */
+        color: white;
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      var info = window.sessionStorage.getItem("recipe");
+      console.log(info);
+      var obj2 = JSON.parse(info);
+
+      var d1 = document.createElement("div");
+      document.body.appendChild(d1);
+      d1.setAttribute("id", "d11");
+
+      var d12 = document.createElement("div");
+      d1.appendChild(d12);
+      d12.setAttribute("id", "p11");
+
+      var img2 = document.createElement("img");
+      d1.appendChild(img2);
+      img2.setAttribute("src", obj2["thumb_big"]);
+      img2.setAttribute("id", "imgg1");
+
+      var h11 = document.createElement("h1");
+      d12.appendChild(h11);
+      h11.setAttribute("id", "h11");
+      h11.innerText = `${obj2["name"]}`;
+
+      var keys = ["aspect_ratio", "id", "position", "slug", "tags", "type"];
+      for (i of keys) {
+        var p1 = document.createElement("p");
+        d12.appendChild(p1);
+        p1.setAttribute("id", "pt");
+        p1.innerText = `${i}:${obj2[i]}`;
+      }
+
+      // if(){
+      //     var t1=JSON.stringify(obj1[i])
+      //     var t2=document.createElement("p")
+      //     d12.appendChild(t2)
+      //     t2.innerText=`${t1[i]}`
+      // }
+    </script>
+  </body>
+</html>

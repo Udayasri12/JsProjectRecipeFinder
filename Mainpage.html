@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body{
+            background-image: url(https://t3.ftcdn.net/jpg/01/77/07/46/240_F_177074677_tNMrFJduw25j2JDWDBM5om9LXmaVs66b.jpg);    
+            background-size: cover;
+        }
+        #h11{
+            color: white;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #indiv1{
+            display: flex;
+        }
+        #div11,#div22{
+            border: 2px solid white;
+            /* display: inline-block; */
+            border-radius: 50%;
+            background-color: rgb(244, 155, 139);
+            padding: 10%;
+            margin-left: 5%;
+            margin-top: 1%;
+            height: 100px;
+            width: 150px;
+        }
+        #div11{
+            margin-left: 250px;
+        }
+        #imgg1,#imgg2{
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            margin-top: -450px;
+            margin-left: -40px;
+        }
+        #p11,#p22{
+          /* margin-top: 20px; */
+          position: relative;
+          top: 100px;
+          z-index: 15;
+          font-size: 150%;
+          color: hsl(224, 100%, 50%);
+          font-style: oblique; 
+          
+        }
+    </style>
+</head>
+<body>
+   
+    
+<script>
+      var md=document.createElement("div")
+      document.body.appendChild(md)
+      md.setAttribute("id","md1")
+
+      var headng=document.createElement("h1")
+      md.appendChild(headng)
+      headng.innerText="CHOICE IS YOUR'S"
+      headng.setAttribute("id","h11")
+
+      var indiv=document.createElement("div")
+      md.appendChild(indiv)
+      indiv.setAttribute("id","indiv1")
+      
+      var div1=document.createElement("div")
+      indiv.appendChild(div1)
+      div1.setAttribute("id","div11")
+      
+      var p1=document.createElement("h3")
+      div1.appendChild(p1)
+      p1.setAttribute("id","p11")
+      p1.innerText="Make a Selection"
+
+      var img1=document.createElement("img")
+      div1.appendChild(img1)
+      img1.setAttribute("id","imgg1")
+      img1.setAttribute("src","https://media.istockphoto.com/id/1176710101/photo/close-up-shot-of-young-woman-biting-into-a-sandwich.jpg?s=612x612&w=0&k=20&c=ZDVngHo6ux41GLS84GYKHYtC1lkc2dq6QAVCrLeexis=")
+
+      div1.addEventListener("click",()=>{
+
+        window.location.assign("./itemsearch.html")
+      })
+
+      var div2=document.createElement("div")
+      indiv.appendChild(div2)
+      div2.setAttribute("id","div22")
+      
+      var p2=document.createElement("h3")
+      div2.appendChild(p2)
+      p2.setAttribute("id","p22")
+      p2.innerText="Try Random Recipe"
+
+      var img2=document.createElement("img")
+      div2.appendChild(img2)
+      img2.setAttribute("src","https://as2.ftcdn.net/v2/jpg/01/64/66/71/1000_F_164667103_iABWtXIbOag3lsKRLcNT84a4oCK6Ss21.jpg")
+      img2.setAttribute("id","imgg2")
+
+      div2.addEventListener("click",()=>{
+
+      window.location.assign("./Randomitem.html")
+      })
+
+      
+
+
+
+
+
+</script>
+
+</body>
+</html>
