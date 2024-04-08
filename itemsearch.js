@@ -2,7 +2,7 @@
 
 var aa=document.createElement("a")
 document.body.appendChild(aa)
-aa.setAttribute("href","./Mainpage.html")
+aa.setAttribute("href","./index.html")
 aa.setAttribute("id","anchor")
 
 var hbutton=document.createElement("button")
