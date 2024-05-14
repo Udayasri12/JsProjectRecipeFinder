@@ -31,7 +31,7 @@
       }
       #pt {
         word-wrap: break-word;
-        width: 810px;
+        width: 500px;
         /* text-align: justify; */
         margin-left: 15%;
         /* margin-top: 10px; */
@@ -68,13 +68,12 @@
       h11.setAttribute("id", "h11");
       h11.innerText = `${obj2["name"]}`;
 
-      var keys = ["aspect_ratio", "id", "position", "slug", "tags", "type"];
-      for (i of keys) {
+     
         var p1 = document.createElement("p");
         d12.appendChild(p1);
         p1.setAttribute("id", "pt");
-        p1.innerText = `${i}:${obj2[i]}`;
-      }
+        p1.innerText = `Details: ${obj2["tags"]}`;
+      
 
       // if(){
       //     var t1=JSON.stringify(obj1[i])
